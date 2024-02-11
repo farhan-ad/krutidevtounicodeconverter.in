@@ -1,0 +1,75 @@
+/* FONTS  */
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+
+@font-face {
+  font-family: "Kruti Dev 010";
+  src: url("../fonts/krutiDev010.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  height: 100%;
+  width: auto;
+}
+
+/* VARAIBLES */
+
+/* UTILITY CLASSES */
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.center {
+  text-align: center;
+}
+
+/* GENERAL STYLES */
+
+/* HEADER */
+.navbar {
+  margin-top: 8px;
+  margin-inline: 0.75rem;
+  padding-bottom: 0.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #415a77;
+}
+
+.navbar_logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.navbar_logo {
+  height: 30px;
+  margin-right: 6px;
+}
+
+.title {
+  font-family: "Kaushan Script", cursive;
+  color: #415a77;
+  font-size: 1.25rem;
+}
+
+.navbar_link {
+  text-decoration: none;
+  color: #415a77;
+  font-family: "Kaushan Script", cursive;
+  font-size: 0.85rem;
+}
