@@ -40,10 +40,15 @@ img {
 
 /* GENERAL STYLES */
 
+body {
+  font-family: "Kaushan Script", cursive;
+  font-size: 16px;
+  margin-inline: 0.75rem;
+}
+
 /* HEADER */
 .navbar {
   margin-top: 8px;
-  margin-inline: 0.75rem;
   padding-bottom: 0.25rem;
   display: flex;
   justify-content: space-between;
@@ -62,7 +67,6 @@ img {
 }
 
 .title {
-  font-family: "Kaushan Script", cursive;
   color: #415a77;
   font-size: 1.25rem;
 }
@@ -70,6 +74,64 @@ img {
 .navbar_link {
   text-decoration: none;
   color: #415a77;
-  font-family: "Kaushan Script", cursive;
   font-size: 0.85rem;
+}
+
+/* MAIN */
+.main_h1 {
+  color: #415a77;
+  font-size: 1.875rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.h1_span {
+  /* display: block; */
+  font-size: 1.375rem;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.secondary-nav {
+  min-width: 12%;
+}
+
+.secondary-nav_ul {
+  list-style-type: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.75rem;
+  background-color: #415a77;
+  color: white;
+}
+
+.secondary-nav_ul li {
+  border-bottom: 1px solid #a3b6cc;
+  margin-bottom: 0.75rem;
+  margin-top: 0.75rem;
+  padding: 0.3rem 0.25rem;
+  text-align: center;
+}
+.secondary-nav_ul li:first-child {
+  padding-top: 0.5rem;
+  margin-top: 0;
+}
+.secondary-nav_ul li:last-child {
+  padding-bottom: 0.5rem;
+  margin-bottom: 0;
+}
+
+.main_content {
+  min-width: 68%;
+  border-left: 1px solid #dee2e6;
+  border-right: 1px solid #dee2e6;
+  padding-inline: 0.5rem;
+}
+
+.advertisement {
+  min-width: 20%;
+  padding-inline: 0.5rem 0;
 }
