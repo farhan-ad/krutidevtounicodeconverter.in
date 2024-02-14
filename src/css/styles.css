@@ -157,7 +157,7 @@ a:focus-within {
 
 /* MAIN CONTENT */
 .main_content {
-  min-width: 68%;
+  width: 68%;
   border-left: 1px solid #dee2e6;
   border-right: 1px solid #dee2e6;
   padding-inline: 0.5rem;
@@ -166,10 +166,16 @@ a:focus-within {
 .container {
   display: flex;
   gap: 1rem;
+  /* min-width: 100%; */
+}
+
+.div_textarea {
+  width: 50%;
 }
 
 .main_textarea {
-  min-height: calc(1.5em + (.75rem + 2px));
+  width: 100%;
+  /* display: block; */
 }
 
 
@@ -195,7 +201,7 @@ a:focus-within {
 
 /* ADS PANEL */
 .advertisement {
-  min-width: 20%;
+  width: 20%;
   padding-inline: 0.5rem 0;
 }
 
