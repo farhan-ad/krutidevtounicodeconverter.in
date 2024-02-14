@@ -606,3 +606,9 @@ function sendtowhatsapp() {
   var texter = document.getElementById("unicodetext").value;
   window.open("https://wa.me/?text=" + texter, "_blank");
 }
+
+// FOOTER YEAR
+const year = document.getElementById("year");
+const thisYear = new Date().getFullYear();
+year.setAttribute("datetime", thisYear);
+year.textContent = thisYear;

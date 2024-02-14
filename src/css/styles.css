@@ -1,5 +1,6 @@
 /* FONTS  */
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+/* font-family: 'EB Garamond', serif; */
 
 @font-face {
   font-family: "Kruti Dev 010";
@@ -20,6 +21,16 @@ img {
   display: block;
   height: 100%;
   width: auto;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+}
+
+.font-kr {
+  font-family: "Kruti Dev 010";
 }
 
 /* VARAIBLES */
@@ -75,6 +86,22 @@ body {
   text-decoration: none;
   color: #415a77;
   font-size: 0.85rem;
+}
+
+/* FOOTER */
+.footer {
+  border-top: 1px solid #415a77;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 2rem;
+
+}
+
+.footer_p {
+  padding: 1rem 0;
+}
+
+.footer_a {
+  text-decoration: none;
 }
 
 /* MAIN */
@@ -136,8 +163,76 @@ a:focus-within {
   padding-inline: 0.5rem;
 }
 
+.container {
+  display: flex;
+  gap: 1rem;
+}
+
+.main_textarea {
+  min-height: calc(1.5em + (.75rem + 2px));
+}
+
+
+/* MAIN ARTICLE */
+.article {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+.article_h2 {
+  font-family: "Kaushan Script", cursive;
+  color: #415a77;
+  font-weight: 500;
+}
+
+.article_ol {
+  margin-left: 1em;
+}
+
+.nav_links a {
+  text-decoration: none;
+}
+
 /* ADS PANEL */
 .advertisement {
   min-width: 20%;
   padding-inline: 0.5rem 0;
+}
+
+
+/* CONTACT */
+.contact_form {
+  border: 1px solid #415a77;
+  max-width: 600px;
+  border-radius: 5px;
+  margin-inline: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1.25rem;
+}
+
+.form_field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 1rem;
+}
+
+.form_input {
+  padding: 0.625rem;
+  width: 90%;
+
+}
+
+.form_textarea {
+  width: 90%;
+  padding: 0.625rem;
+  border-radius: 3px;
+}
+
+.btn_submit {
+  padding: .625rem 1rem;
+  border: none;
+  background-color: #415a77;
+  color: #fff;
+  border-radius: 5px;
 }
