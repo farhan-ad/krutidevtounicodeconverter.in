@@ -1,0 +1,306 @@
+/* FONTS  */
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@font-face {
+  font-family: "Kruti Dev 010";
+  src: url("../fonts/krutiDev010.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  height: 100%;
+  width: auto;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+}
+
+.font-kr {
+  font-family: "Kruti Dev 010";
+}
+
+/* VARAIBLES */
+:root {
+  /* FONTS */
+  --FF: "Open Sans", sans-serif;
+  --FF-HEADING: "Kaushan Script", cursive;
+  --FS: clamp(1.15rem, 2.2vh, 1.65rem);
+
+  /* COLORS */
+  --BORDER-COLOR: #415a77;
+  --BUTTON-BGCOLOR: #415a77;
+  --BUTTON-COLOR: #fff;
+  --FONT-COLOR: #000;
+  --HEADER-COLOR: #415a77;
+  --LINK-BORDER-COLOR: #a3b6cc;
+
+  --HIGHLIGHT-COLOR: #2ec4b6;
+  --LINK-VISITED: #fff;
+  --LINK-COLOR: #415a77;
+  --LINK-HOVER: #2ec4b6;
+
+  /* BORDERS */
+  --BORDERS: 1px solid var(--BORDER-COLOR);
+  --LINK-BORDERS: 1px solid var(--LINK-BORDER-COLOR);
+  --BORDER-RADIUS: 8px;
+
+  /* STANDARD PADDING */
+  --PADDING-TB: 0.5em;
+  --PADDING-SIDE: 2.5%;
+
+  /* STANDARD MARGIN */
+  --MARGIN: clamp(1em, 2.5vh, 1.5em) 0;
+
+}
+
+
+/* UTILITY CLASSES */
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.center {
+  text-align: center;
+}
+
+/* GENERAL STYLES */
+html {
+  font-size: var(--FS);
+  font-family: var(--FF);
+}
+
+body {
+  color: var(--FONT-COLOR);
+  margin: 0 1rem;
+}
+
+h1,
+h2 {
+  color: var(--HEADER-COLOR);
+  font-family: var(--FF-HEADING);
+  font-weight: 500;
+}
+
+h2,
+h3 {
+  margin-bottom: 1em;
+}
+
+p {
+  line-height: 1.5;
+}
+
+/* HEADER */
+.navbar {
+  align-items: center;
+  border-bottom: var(--BORDERS);
+  display: flex;
+  font-family: var(--FF-HEADING);
+  justify-content: space-between;
+  margin-top: 12px;
+  padding-bottom: .15em;
+}
+
+.navbar_logo-title {
+  align-items: center;
+  display: flex;
+}
+
+.navbar_logo {
+  height: 30px;
+  margin-right: 6px;
+}
+
+.title {
+
+  color: var(--HEADER-COLOR);
+  font-size: 1.5rem;
+}
+
+.navbar_link {
+  text-decoration: none;
+  color: var(--HEADER-COLOR);
+
+}
+
+/* FOOTER */
+.footer {
+  border-top: var(--BORDERS);
+  margin-top: 1.5em;
+
+}
+
+.footer_p {
+  padding: var(--PADDING-TB) 0;
+}
+
+.footer_a {
+  text-decoration: none;
+}
+
+/* MAIN */
+.main_h1 {
+  font-size: 1.875rem;
+  margin: .75em 0 .25em;
+}
+
+.h1_span {
+  font-size: 1.375rem;
+}
+
+.wrapper {
+  display: flex;
+}
+
+/* SECONDARY NAV */
+.secondary-nav {
+  width: 12%;
+}
+
+.secondary-nav_ul {
+  list-style-type: none;
+  font-size: .75rem;
+}
+
+.secondary-nav_ul a {
+  display: block;
+  border-bottom: var(--LINK-BORDERS);
+  padding: 1em 0;
+  color: white;
+  text-decoration: none;
+  background-color: var(--LINK-COLOR);
+}
+
+.secondary-nav_ul a:visited {
+  background-color: var(--LINK-VISITED);
+  color: var(--LINK-COLOR);
+}
+
+.secondary-nav_ul a:hover,
+.secondary-nav_ul a:focus-within {
+  background-color: var(--LINK-HOVER);
+}
+
+/* MAIN CONTENT */
+.main_content {
+  width: 68%;
+  border-inline: 1px solid #dee2e6;
+  padding-inline: var(--PADDING-SIDE);
+}
+
+.container {
+  display: flex;
+  gap: 2.5%;
+
+}
+
+.div_textarea {
+  width: 50%;
+  height: 300px;
+}
+
+.main_textarea {
+  width: 100%;
+  height: 100%;
+  padding: var(--PADDING-SIDE);
+}
+
+.container-btn {
+  display: flex;
+  gap: 2.5%;
+}
+
+.main_btn {
+  align-items: center;
+  background-color: var(--LINK-COLOR);
+  border-radius: var(--BORDER-RADIUS);
+  border: none;
+  color: #ffffff;
+  display: flex;
+  font-size: .75rem;
+  font-weight: bold;
+  gap: 8px;
+  height: 36px;
+  padding: var(--PADDING-TB) var(--PADDING-SIDE);
+  width: auto;
+}
+
+.main_btn img {
+  height: 65%;
+  width: auto;
+}
+
+.copy-btn {
+  background-color: var(--HIGHLIGHT-COLOR);
+}
+
+/* MAIN ARTICLE */
+.article {
+  margin-top: 5rem;
+}
+
+.nav_links a {
+  text-decoration: none;
+}
+
+/* ADS PANEL */
+.advertisement {
+  width: 20%;
+  padding-inline: var(--PADDING-SIDE);
+}
+
+
+/* CONTACT */
+.contact_form {
+  border: var(--BORDERS);
+  max-width: 600px;
+  border-radius: var(--BORDER-RADIUS);
+  margin-inline: auto;
+  padding: var(--PADDING-TB) var(--PADDING-SIDE);
+}
+
+.form_field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 1em;
+}
+
+.form_input {
+  padding: var(--PADDING-TB) var(--PADDING-SIDE);
+  width: 90%;
+  border-width: 1px;
+  border-radius: var(--BORDER-RADIUS);
+}
+
+.form_textarea {
+  width: 100%;
+  padding: var(--PADDING-TB) var(--PADDING-SIDE);
+  border-radius: var(--BORDER-RADIUS);
+}
+
+.btn_submit {
+  padding: var(--PADDING-TB) var(--PADDING-SIDE);
+  border: none;
+  background-color: var(--LINK-COLOR);
+  color: #fff;
+  border-radius: var(--BORDER-RADIUS);
+}

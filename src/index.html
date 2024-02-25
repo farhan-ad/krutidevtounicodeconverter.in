@@ -19,7 +19,7 @@
 
 	<link rel="shortcut icon" href="images/logo.png">
 	<!-- CSS files -->
-	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/Adstyles.css">
 	<!-- Google tag (gtag.js) -->
 </head>
 
@@ -31,19 +31,19 @@
 				<a class="navbar_logo" href="index.html">
 					<img src="images/logo.png" alt="Krutidev to Unicode converter logo">
 				</a>
-				<span class="title">Krutidev to Unicode converter.in</span>
+				<span class="title nowrap">Krutidev to Unicode converter.in</span>
 			</div>
-			<a class="navbar_link" href="contact.html">Contact Us</a>
+			<a class="navbar_link" href="contact.html">Contact</a>
 		</nav>
 	</header>
 
 	<main class="main">
-		<h1 class="main_h1">Krutidev to Unicode Converter: <span class="h1_span"> Fast and Accurate Hindi
+		<h1 class="main_h1 center">Krutidev to Unicode Converter: <span class="h1_span"> Fast and Accurate Hindi
 				Font Conversion</span></h1>
 
 		<div class="wrapper">
 			<div class="secondary-nav">
-				<ul class="secondary-nav_ul">
+				<ul class="secondary-nav_ul center">
 					<li><a href="unicode-to-kruti-dev.html">Unicode to Kruti Dev</a></li>
 					<li><a href="unicode-to-chanakya.html">Unicode to Chanakya</a></li>
 					<li><a href="index.html">Kruti Dev to Unicode</a></li>
@@ -57,14 +57,25 @@
 			<section class="main_content">
 				<div class="container">
 					<div class="div_textarea">
-						<textarea class="main_textarea" name="krutitext" id="krutitext"
-							style="font-family: kruti Dev 010;" placeholder="Ñfrnso VsDlV ;gk¡ isLV djsaA" rows="10"
-							onkeyup="krutiunicode()" onpaste="krutiunicode()" onchange="krutiunicode()"></textarea>
+						<textarea class="main_textarea font-kr" name="krutitext" id="krutitext"
+							placeholder="Ñfrnso VsDlV ;gk¡ isLV djsaA" rows="10" onkeyup="krutiunicode()"
+							onpaste="krutiunicode()" onchange="krutiunicode()"></textarea>
+
+						<button class="main_btn center" onclick="krutiunicode()"><img src="images/icons/convert.svg"
+								alt="convert_icon">Convert to
+							Unicode</button>
+
 					</div>
 					<div class="div_textarea">
-						<textarea class="main_textarea" name="krutitext" id="krutitext"
-							style="font-family: kruti Dev 010;" placeholder="Ñfrnso VsDlV ;gk¡ isLV djsaA" rows="10"
-							onkeyup="krutiunicode()" onpaste="krutiunicode()" onchange="krutiunicode()"></textarea>
+						<textarea class="main_textarea" name="unicodetext" id="unicodetext"
+							placeholder="Unicode Text will appear here." rows="10"></textarea>
+
+						<div class="container-btn">
+							<button class="main_btn center copy-btn" onclick="copyclipboard()"><img
+									src="images/icons/svg.svg" alt="copy_icon"> <span id="copy_txt">Copy</span></button>
+							<button class="main_btn center" onclick="u_word()"><img src="images/icons/download.svg"
+									alt="download_icon">Download Word Doc</button>
+						</div>
 					</div>
 				</div>
 
@@ -188,9 +199,7 @@
 
 			</section>
 			<div class="advertisement">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, debitis officia quasi beatae nemo incidunt
-				odio, amet perspiciatis, dolore molestiae suscipit. Nulla neque culpa assumenda error dicta delectus,
-				expedita eos?
+
 			</div>
 		</div>
 	</main>
