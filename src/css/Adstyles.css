@@ -189,14 +189,14 @@ p {
   background-color: var(--LINK-COLOR);
 }
 
-.secondary-nav_ul a:visited {
-  background-color: var(--LINK-VISITED);
-  color: var(--LINK-COLOR);
-}
-
 .secondary-nav_ul a:hover,
 .secondary-nav_ul a:focus-within {
   background-color: var(--LINK-HOVER);
+}
+
+.secondary-nav_ul a.active {
+  background-color: var(--LINK-VISITED);
+  color: var(--LINK-COLOR);
 }
 
 /* MAIN CONTENT */
