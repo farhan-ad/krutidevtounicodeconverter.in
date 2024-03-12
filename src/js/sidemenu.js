@@ -1,20 +1,26 @@
 function setActiveLink() {
   let currentPath = window.location.href;
-  // Normalize the currentPath to handle the domain or home page without index.html
-  const baseUrl = window.location.origin + "/";
-  const homePageEndings = ["index.html", ""];
+  // Normalize the currentPath to handle the domain, home page, or any subdirectory without explicitly naming index.html
+  const baseUrl = window.location.origin + window.location.pathname;
+  const homePageEndings = ["index.html", "/"];
+
+  // Ensure the base URL does not include a file name
+  const normalizedBaseUrl = baseUrl.endsWith("/")
+    ? baseUrl
+    : baseUrl.substring(0, baseUrl.lastIndexOf("/") + 1);
 
   if (homePageEndings.some((ending) => currentPath.endsWith(ending))) {
-    currentPath = baseUrl;
+    currentPath = normalizedBaseUrl;
   }
 
   document.querySelectorAll(".secondary-nav_ul a").forEach((link) => {
     // Normalize the link href for a direct comparison
     let linkHref = link.getAttribute("href");
-    if (linkHref === "index.html" || linkHref === "") {
-      linkHref = baseUrl;
+    if (linkHref === "index.html" || linkHref === "/") {
+      linkHref = normalizedBaseUrl;
     } else {
-      linkHref = new URL(linkHref, baseUrl).href;
+      // Ensure the link is compared as an absolute URL
+      linkHref = new URL(linkHref, normalizedBaseUrl).href;
     }
 
     if (currentPath === linkHref) {
